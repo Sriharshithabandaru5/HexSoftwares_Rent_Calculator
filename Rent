@@ -1,0 +1,21 @@
+## Inputs
+# Total Rent
+# Total Food ordered
+# Electricity units spent
+# Charge per unit
+# Number of persons living in room
+
+## Output
+# Total amount need to pay
+
+Rent = int(input("Enter hostel rent = "))
+Food = int(input("Enter the amount of food ordered ="))
+Electricity_Consumed = int(input("Enter the electricity units consumed ="))
+Cost_per_unit = int(input("Enter the cost per unit ="))
+Persons = int(input("Enter the number of persons living in room ="))
+
+Total_Electricity = Electricity_Consumed * Cost_per_unit
+
+Output = (Food + Rent + Total_Electricity)  // Persons
+
+print("Each person need to pay =", Output)
